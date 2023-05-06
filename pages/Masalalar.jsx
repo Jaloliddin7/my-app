@@ -5,20 +5,18 @@ import Head from 'next/head'
 import Nov from '../components/Nov'
 import Card from '@/components/Card'
 import { useState } from 'react'
+import data from '@/components/Base'
 
 const alata = Alata({
   subsets: ['latin'],
   weight: "400"
 })
 
-function Masalalar({data}) {
+function Masalalar() {
 
   const [togle, setTogle] = useState(false)
 
-  // function click() {
 
-  //   setTogle(prew => prew = !prew)
-  // }
 
   return (
     <div className='flex flex-col'>
@@ -132,7 +130,7 @@ function Masalalar({data}) {
               </div>
             </div>
           </div>
-        </section> :  <Card key={data.question} data={data}></Card> }
+        </section> :  <Card key={data[0].question} data={data}></Card> }
       </main>
 
       <footer className='bg-slate-300 py-[39px] px-5 gol  '>
@@ -221,13 +219,3 @@ function Masalalar({data}) {
 export default Masalalar
 
 
-export async function getStaticProps(context) {
-
-  const res = await fetch('http://localhost:3000/api/hello');
-  const data = await res.json();
-  return {
-    props: {
-      data,
-    },
-  };
-}
