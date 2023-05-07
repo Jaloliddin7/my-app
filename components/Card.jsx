@@ -60,7 +60,7 @@ function Card({ data }) {
     return (
         <div className="px-2 flex  py-20 relative">
             <div className='border-separate mx-auto   max-sm:w-[350px] items-center justify-center rounded-2xl py-9  px-5 gr '>
-                <h2 className='mb-5 text-md w-[80vw] md:w-[350px]  h-[50px] text-start md:text-start font-bold'>{num + 1}). {data[num]?.question ? data[num]?.question : `Sizning natijangiz 15/${score}`}</h2>
+                <h2 className='mb-5 md:text-xl text-base w-[80vw] lg:w-[380px]  h-[50px] text-start md:text-start font-bold'>{num + 1}). {data[num]?.question ? data[num]?.question : `Sizning natijangiz 15/${score}`}</h2>
                 <hr className='h-1  ' />
                 {data[num]?.question ? <form action="" ref={formRef} key={data[num]?.question} onSubmit={handleSubmit}>
                     <ul className='flex flex-col gap-2 justify-start items-start'>
