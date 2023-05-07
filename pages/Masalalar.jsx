@@ -19,12 +19,12 @@ function Masalalar() {
 
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col  w-full'>
       <Head>
         <title>Bosh sahifa</title>
       </Head>
-      <heder className={`${alata.className} header  z-10 backdrop-filter flex sticky top-0 left-0  items-center justify-between px-6 py-6`}>
-        <nav className='flex gap-8 flex-wrap items-center  '>
+      <heder className={`${alata.className} header   z-10 backdrop-filter flex sticky top-0 left-0  items-center justify-between px-6 py-6`}>
+        <nav className='flex gap-8 flex-wrap container items-center  '>
           <Image
             className="relative "
             src="/logo.png"
@@ -38,10 +38,10 @@ function Masalalar() {
         {/* <Ul /> */}
       </heder>
 
-      <main className='  flex-grow h-[100vh] grad '>
+      <main className='  flex-grow  grad  flex items-center justify-center'>
 
-       {!togle ? <section key={"lll"} className=' py-[63px] px-10 -z-0 flex justify-center  mx-auto  '>
-          <div className="  mx-auto flex gap-5 flex-wrap max-md:justify-center">
+       {!togle ? <section key={"lll"} className=' py-[63px] container   px-10 -z-0 flex items-center justify-center  mx-auto  '>
+          <div className="  mx-auto flex gap-10 flex-wrap max-md:justify-center">
             <div className="card">
               <div className="card-front">
                 <Image
@@ -133,8 +133,8 @@ function Masalalar() {
         </section> :  <Card key={data[0].question} data={data}></Card> }
       </main>
 
-      <footer className='bg-slate-300 py-[39px] px-5 gol  '>
-        <div className="footer-list flex items-center py-10 px-10 flex-wrap gap-5 justify-between">
+      <footer className='bg-slate-300  py-[39px] px-5 gol  '>
+        <div className="footer-list flex container items-center py-10 px-10 flex-wrap gap-5 justify-between">
           <div className="footer-img ">
             <Image
               className="relative "
@@ -148,7 +148,7 @@ function Masalalar() {
           <div className="footer-social flex gap-4">
             <a href="https://www.instagram.com/jaloliddin9785/">
               <Image
-                className="relative "
+                className="relative mb-2 "
                 src="/insta.png"
                 alt="Next.js Logo"
                 width={35}
@@ -158,7 +158,7 @@ function Masalalar() {
             </a>
             <a href="https://t.me/mirzo_3">
               <Image
-                className="relative "
+                className="relative mb-2 "
                 src="/tel.png"
                 alt="Next.js Logo"
                 width={35}
@@ -168,7 +168,7 @@ function Masalalar() {
             </a>
             <a href="https://www.facebook.com">
               <Image
-                className="relative "
+                className="relative mb-2 "
                 src="/fac.png"
                 alt="Next.js Logo"
                 width={35}
@@ -178,7 +178,7 @@ function Masalalar() {
             </a>
             <a href="https://github.com/Jaloliddin7">
               <Image
-                className="relative "
+                className="relative mb-2 "
                 src="/git.svg"
                 alt="Next.js Logo"
                 width={35}
@@ -188,7 +188,7 @@ function Masalalar() {
             </a>
           </div>
         </div>
-        <ul className='flex justify-start mx-auto px-10 gap-20 mb-6 flex-wrap '>
+        <ul className='flex justify-center mx-auto px-10 gap-20 mb-6 flex-wrap '>
           <li className='flex flex-col '>
             <a className=' ease transition-all' href="#"> Bosh Sahifa</a>
             <a className=' ease transition-all' href="#"> Masalalar </a>
@@ -206,10 +206,10 @@ function Masalalar() {
             <a className=' ease transition-all' href="#"> Kontaktlar</a>
             <a className=' ease transition-all' href="#"> Mulohazalar</a>
           </li>
-        </ul>
         <h1 className='font-semibold'>
           THE AUTHOR: Abdutolipov Jaloliddin
         </h1>
+        </ul>
       </footer>
 
     </div>

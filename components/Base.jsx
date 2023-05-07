@@ -48,52 +48,62 @@ const data = [
       correct: "77377",
     },
     {
-      question: "Manfiy sonlar berilgan qatorni toping. 1)-1/4, -2.5/3, 6, 0; 2)1/4, 8.7/9,6,17,19; 3)-5,-2.7/15,-19,-26; 4)5,4,3,2,1; 5)10,11,12,13,...",
-      a: "1;4",                         //7
-      b: "4;5",
+      question: `x ni toping?
+       13x+65+(16x+5)=100`,
+      a: "30/29",                         //7
+      b: "4/5",
+      c: "1/5",
+      d: "30/23",
+      correct: "30/29",
+    },
+    {
+      question: `x ni tiping? 
+      (25x-15)*5=35`,
+      a: "0.88",           //8
+      b: "1.4",
+      c: "1.34",
+      d: "5",
+      correct: "0.88",
+    },
+    {
+      question: "x ni tiping? (32x-15x)*9=153",
+      a: "0.8",           //8
+      b: "1",
+      c: "2.34",
+      d: "5",
+      correct: "1",
+    },
+    {
+      question: "Ifodani toping? (25a+12a)x6+23a=245",
+      a: "1",                       //9
+      b: "3",
+      c: "5",
+      d: "8",
+      correct: "1",
+    },
+    {
+      question: "Ifodani toping? 12a+5a+45=96",
+      a: "3",                        //10
+      b: "5",
       c: "1",
-      d: "3",
+      d: "2",
       correct: "3",
     },
     {
-      question: "Manfiy sonlar berilgan qatorni toping. 1)-77,-66,-44; 2)2,5,6,17,19; 3)0,-33,-44,-55; 4)-4,-23/36,-16,-44; 5)10,11,12,13,...",
-      a: "1;3",           //8
-      b: "1;4",
-      c: "1;3;4",
-      d: "5",
-      correct: "1;4",
+      question: "Ifodani toping? -53-63(45-64)",
+      a: "1122",                             //11
+      b: "454",
+      c: "2545",
+      d: "1144",
+      correct: "1144",
     },
     {
-      question: "Manfiy sonlar berilgan qatorni toping. 1)10,11,12,13,...; 2)2,5,6,17,19; 3)-4,13/14,16,-44; 4)-3,-2018,-55; 5)-1,-6,-44",
-      a: "4;5",                       //9
-      b: "3;4;5",
-      c: "2;4;5",
-      d: "3",
-      correct: "4;5",
-    },
-    {
-      question: "Musbat sonlar berilgan qatorni toping. 1)1/4,-2.3/5,6,0; 2)1/4,5.9/76,0; 3)-5,-2.7/15,-19,-26; 4)5,4,3,2,1/7; 5)10,11,12,13,...",
-      a: "1;4",                        //10
-      b: "4;5",
-      c: "1;3",
-      d: "2",
-      correct: "4;5",
-    },
-    {
-      question: "Musbat sonlar berilgan qatorni toping. 1)3.5/41,2,6; 2)1/4,-2.17/59,-6; 3)-2,-94/8,-14,26; 4)5,4,3,2,1/7; 5)-22,-33,-44",
-      a: "1;4",                             //11
-      b: "4;5",
-      c: "2;4;5",
-      d: "4",
-      correct: "1;4",
-    },
-    {
-      question: "Musbat sonlar berilgan qatorni toping. 1)17/44, 42.3/5,8; 2)1/4,3.2/5,78; 3)19,32.17/35,-19,-26; 4)5,43,-2.1/7 5)11,22,-33,44,...",
-      a: "1;4",             //12
-      b: "3;5",
-      c: "1;2",
-      d: "3",
-      correct: "1;2",
+      question: "Ifodani toping? -456-83(55-64)",
+      a: "154",             //12
+      b: "291",
+      c: "265",
+      d: "256",
+      correct: "291",
     },
     {
       question: "-69-88 ni hisoblang.",

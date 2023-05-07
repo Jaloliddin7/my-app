@@ -3,7 +3,7 @@ import React from 'react'
 
 function Ul() {
   return (
-          <div className='border-separate mx-auto flex  w-full items-center justify-end rounded-2xl  px-5 gr my-[30px]'><div className='bg-green-500 inline-block rounded-lg p-2'><Link href={"/"}>Bosh sahif</Link></div></div>
+          <div className='border-separate mx-auto flex   w-full items-center justify-center rounded-2xl  px-5 gr my-[20px] md:my-[30px]'><div className='bg-green-500  block rounded-lg p-2'><Link href={"/"} className='text-white'>BOSH SAHIFA</Link></div></div>
   )
 }
 

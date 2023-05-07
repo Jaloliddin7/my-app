@@ -19,12 +19,12 @@ export default function Home() {
   }
 
   console.log(togle);
-  return (<div className='flex flex-col'>
+  return (<div className='flex   max-md:w-full mx-auto flex-col'>
     <Head>
       <title>Bosh sahifa</title>
     </Head>
-    <heder className={`${alata.className} header  z-10 backdrop-filter flex sticky top-0 left-0  items-center justify-between px-6 py-6`}>
-      <nav  className='flex gap-8 flex-wrap items-center  '>
+    <heder className={`${alata.className} header   z-10 backdrop-filter flex sticky top-0 left-0  items-center justify-between px-6 py-6`}>
+      <nav className='flex gap-8 container flex-wrap items-center  '>
         <Image
           className="relative "
           src="/logo.png"
@@ -37,20 +37,29 @@ export default function Home() {
       </nav>
     </heder>
 
-    <main className='  flex-grow  '>
-      <section className='py-10 md:py-2 md:px-2 px-10   mx-auto bg_Img  h-[100vh]'>
-        <ul className='flex  px-5  rounded-2xl lg:flex gap-7 max-md:flex-wrap max-md:text-center max-md:justify-center  '>
+    <main className='  flex-grow   '>
+      <section className='py-10 md:py-2 md:px-2 px-10  flex items-center mx-auto bg_Img  h-[100vh] '>
+        <ul className='flex  px-5 container mx-auto items-center justify-center  rounded-2xl  gap-7 max-md:flex-wrap max-md:text-center max-md:justify-center max-lg:justify-center  '>
           <li className=' flex  flex-col justify-center '>
-            <h1 className='text-8xl font-mono font-bold text-[4vw]  mb-4'>Math Master</h1>
-            <p className='font-semibold tracking-wide text-[2vw] max-w-screen-sm:text-[4vw] w-[40vw] max-md:w-[50vw]'>Siz Math Master kitoblari yordamida siz matematikani mukammal darajada o'rganishingiz mumkin.Har bir kitob shunday ishlab chiqilganki, ularni muvaffaqiyatli yakunlab, siz matamatika ustoziga aylanishingiz va shu sohada o‘z faoliyatingizni boshlashingiz mumkin.</p>
+            <h1 className='text-8xl font-mono font-bold md:text-[4vw]  mb-4'>Math Master</h1>
+            <p className='font-sans  text-xs leading-tight text md:text-[2vw]  md:max-w-lg '>Siz Math Master kitoblari yordamida siz matematikani mukammal darajada o'rganishingiz mumkin.Har bir kitob shunday ishlab chiqilganki, ularni muvaffaqiyatli yakunlab, siz matamatika ustoziga aylanishingiz va shu sohada o‘z faoliyatingizni boshlashingiz mumkin.</p>
           </li>
-          <li className='boook  '>
+          <li className='boook'>
+            <div className="relative flex justify-center w-[100%] h-[100%] max-md:h-[80%]">
+              <Image className="absolute "
+                fill
+                src="/book1.png"
+                alt="Next.js polo"
+                // width={500}
+                // height={57}
+                priority />
+            </div>
           </li>
         </ul>
       </section>
 
-      <section className=' py-10 px-10 -z-0  mx-auto grad '>
-        <ul className='flex justify-between rounded-2xl  max-md:justify-center py-10 px-10 gap-5 md:py-5 md:px-5 flex-wrap'>
+      <section className=' py-8 px-8   grad  '>
+        <ul className='flex mx-auto items-center rounded-2xl h-full justify-center  gap-12  flex-wrap'>
           <li key={"tolk"}>
             <div className="book">
               <p className='pl-10 text-gray-800'>Bizda ta'lim olgan o'quvchilarimiz hozirgi kunda tajribali mutaxasis va nufuzli oliy ta'lim universitetlarda o'qimoqda.</p>
@@ -94,7 +103,7 @@ export default function Home() {
       </section>
     </main>
 
-    <footer className='bg-slate-300 py-5 px-6 gol   '>
+    <footer className='bg-slate-300  py-5 px-6 gol   '>
       <div className="footer-list flex items-center py-10 px-10 flex-wrap gap-5 justify-between">
         <div className="footer-img ">
           <Image
@@ -109,7 +118,7 @@ export default function Home() {
         <div className="footer-social flex gap-4">
           <a href="https://www.instagram.com/jaloliddin9785/">
             <Image
-              className="relative "
+              className="relative mb-2 "
               src="/insta.png"
               alt="Next.js Logo"
               width={35}
@@ -119,7 +128,7 @@ export default function Home() {
           </a>
           <a href="https://t.me/mirzo_3">
             <Image
-              className="relative "
+              className="relative mb-2 "
               src="/tel.png"
               alt="Next.js Logo"
               width={35}
@@ -129,7 +138,7 @@ export default function Home() {
           </a>
           <a href="https://www.facebook.com">
             <Image
-              className="relative "
+              className="relative mb-2 "
               src="/fac.png"
               alt="Next.js Logo"
               width={35}
@@ -139,7 +148,7 @@ export default function Home() {
           </a>
           <a href="https://github.com/Jaloliddin7">
             <Image
-              className="relative "
+              className="relative mb-2 "
               src="/git.svg"
               alt="Next.js Logo"
               width={35}
